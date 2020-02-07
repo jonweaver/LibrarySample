@@ -1,4 +1,5 @@
 ﻿using System;
+using Library.Orchestrator;
 
 namespace Library.CommandLine
 {
@@ -6,7 +7,11 @@ namespace Library.CommandLine
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            var library = new Library.Orchestrator.Library();
+
+            var checkedOutItem = library.CheckoutItem("SomeTitle");
+
         }
     }
 }
