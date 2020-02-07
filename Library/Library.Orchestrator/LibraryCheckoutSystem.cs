@@ -6,11 +6,11 @@ using System.Collections.Generic;
 
 namespace Library.Orchestrator
 {
-    public class Library
+    public class LibraryCheckoutSystem
     {
         private readonly ILibraryRepository _libraryRepo;
 
-        public Library()
+        public LibraryCheckoutSystem()
         {
             _libraryRepo = new FileRepository();
 

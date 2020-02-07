@@ -8,7 +8,7 @@ namespace Library.CommandLine
         static void Main(string[] args)
         {
 
-            var library = new Library.Orchestrator.Library();
+            var library = new LibraryCheckoutSystem();
 
             var checkedOutItem = library.CheckoutItem("SomeTitle");
 
