@@ -1,9 +1,9 @@
-﻿using Library.Domain.Models;
+﻿using Library.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Library.Domain.Interfaces
+namespace Library.Interfaces
 {
     public interface ILibraryRepository
     {

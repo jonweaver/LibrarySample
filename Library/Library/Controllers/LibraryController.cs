@@ -1,19 +1,25 @@
-﻿using Library.Domain.Interfaces;
-using Library.Domain.Models;
+﻿using Library.Interfaces;
 using Library.IO;
+using Library.Models;
 using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace Library.Orchestrator
+namespace Library.Controllers
 {
-    public class LibraryCheckoutSystem
+    public class LibraryController
     {
         private readonly ILibraryRepository _libraryRepo;
 
-        public LibraryCheckoutSystem()
+        public LibraryController()
         {
             _libraryRepo = new FileRepository();
 
+        }
+
+        public List<Item> GetItems()
+        {
+            return _libraryRepo.GetAllItems();
         }
 
         public Item CheckoutItem(string name)
@@ -31,6 +37,9 @@ namespace Library.Orchestrator
         {
 
         }
+
+
+        
 
         // more methods below
 

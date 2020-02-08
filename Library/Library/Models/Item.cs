@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Library.Domain.Models
+namespace Library.Models
 {
     public abstract class Item
     {

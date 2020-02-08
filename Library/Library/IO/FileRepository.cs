@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Library.Domain.Interfaces;
-using Library.Domain.Models;
+using Library.Interfaces;
+using Library.Models;
 
 namespace Library.IO
 {
